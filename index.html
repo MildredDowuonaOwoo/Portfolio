@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Portfolio</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+<link  rel="stylesheet"  href="style.css">
+
+</head>
+
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">PORTFOLIO</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-bg-glow2"></div>
+
+  <p class="hero-tag">Available for work &mdash; 2026</p>
+
+  <h1 class="hero-name">
+    <span>MILDRED</span>
+    <span class="accent-line">DOWUONA</span>
+    <span>OWOO</span>
+  </h1>
+
+  <p class="hero-sub">
+    <span>UI/UX Designer & Web Developer</span> &amp; Creative Technologist &mdash; building digital
+    experiences that push the boundaries of the modern web.
+  </p>
+
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View My Work</a>
+    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-left">
+    <div class="about-avatar reveal">
+      <div class="avatar-corner tl"></div>
+      <div class="avatar-corner tr"></div>
+      <div class="avatar-corner bl"></div>
+      <div class="avatar-corner br"></div>
+      <div class="avatar-inner">
+        <div class="avatar-svg-wrap">
+            <img src="images/mildread.png">
+          
+        </div>
+        <div class="avatar-name-tag">MILDRED DOWUONA OWOO</div>
+        <div class="avatar-role-tag">UI/UX Designer & Web Developer</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-right">
+    <div class="section-label reveal">About Me</div>
+    <h2 class="section-title reveal">Who I Am</h2>
+    <p class="about-text reveal">
+      I'm a <strong>passionate UI/UX designer and web developer</strong> who crafts high-performance,
+      visually stunning digital products. My work sits at the intersection of
+      clean engineering and bold design &mdash; Creativity in design, precision
+      in code.
+    </p>
+    <p class="about-text reveal">
+      With a deep love for <strong>creative technology</strong>, I specialize in
+      building web applications that feel alive &mdash; responsive, animated, and
+      deeply considered. From concept to deployment, I own the entire experience.
+    </p>
+    <div class="stats-row">
+      <div class="stat-item reveal">
+        <div class="stat-num">1+</div>
+        <div class="stat-label">Years Exp.</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label reveal">My Work</div>
+      <h2 class="section-title reveal">Selected Projects</h2>
+    </div>
+  </div>
+  <div class="projects-grid">
+
+    <!-- Featured -->
+    <div class="project-card featured reveal">
+      <div class="project-num">01 &mdash; Featured</div>
+      <div class="project-thumb thumb-bg-1">
+        <span class="thumb-label">Project Alpha</span>
+        <div class="thumb-icon thumb-icon-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="1.5">
+            <rect x="3" y="3" width="7" height="7" rx="1"/>
+            <rect x="14" y="3" width="7" height="7" rx="1"/>
+            <rect x="3" y="14" width="7" height="7" rx="1"/>
+            <rect x="14" y="14" width="7" height="7" rx="1"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="project-title">TrustLens</h3>
+      <p class="project-desc">A fraud detection and link phishing app.</p>
+      <div class="project-tags">
+        <span class="tag tag-accent">React Native with Expo</span>
+        <span class="tag tag-accent">FastAPI</span>
+        <span class="tag">General AI and Gemma 4</span>
+        <span class="tag">Supabase</span>
+       
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card reveal">
+      <div class="project-num">02</div>
+      <div class="project-thumb thumb-bg-2">
+        <span class="thumb-label">Ecommerce</span>
+        <div class="thumb-icon thumb-icon-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7b2fff" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="project-title">E-Commerce App</h3>
+      <p class="project-desc">Full-featured storefront with cart,and an admin panel.</p>
+      <div class="project-tags">
+        <span class="tag tag-accent">HTML</span>
+        <span class="tag">C#</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Javascript</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card reveal">
+      <div class="project-num">03</div>
+      <div class="project-thumb thumb-bg-3">
+        <span class="thumb-label">Booking</span>
+        <div class="thumb-icon thumb-icon-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff2f7b" stroke-width="1.5">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="project-title">GovSchedula</h3>
+      <p class="project-desc">App for booking appointment at government agencies.</p>
+      <div class="project-tags">
+        <span class="tag tag-accent">HTML</span>
+        <span class="tag">C#</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Javascript</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card reveal">
+      <div class="project-num">04</div>
+      <div class="project-thumb thumb-bg-4">
+        <span class="thumb-label">Mobile</span>
+        <div class="thumb-icon thumb-icon-4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="1.5">
+            <rect x="5" y="2" width="14" height="20" rx="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18" stroke-linecap="round" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+      <h3 class="project-title">UniLink App</h3>
+      <p class="project-desc">Campus assistance app .</p>
+      <div class="project-tags">
+        <span class="tag tag-accent">React Native with Expo</span>
+        <span class="tag">MongoDB</span>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div>
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-title reveal">Skills &amp; Stack</h2>
+      <p class="about-text reveal" style="margin-top:1rem;">
+        Years of building across the full stack &mdash; from pixel-perfect UIs to
+        scalable backend architecture.
+      </p>
+    </div>
+
+    <div>
+      <!-- Frontend Skills -->
+      <div class="skill-category reveal">
+        <div class="skill-cat-label">Frontend</div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">HTML/ React</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-cyan" data-w="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Figma</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-cyan" data-w="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">CSS / Animation</span><span class="skill-pct">92%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-cyan" data-w="92"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Skills -->
+      <div class="skill-category reveal">
+        <div class="skill-cat-label">Backend</div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">C# with ASP.Net</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-pink" data-w="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Python / FastAPI</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-pink" data-w="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">SQL / Supabase</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-pink" data-w="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div>
+        <div class="skill-cat-label" style="margin-bottom:1rem;">Tools &amp; Platforms</div>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="tool-name">VS Code</div>
+          </div>
+          
+          <div class="tool-card">
+            <div class="tool-icon">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path fill="#F24E1E" d="M8 2h4v6H8a3 3 0 1 1 0-6z"/>
+  <path fill="#FF7262" d="M8 8h4v6H8a3 3 0 1 1 0-6z"/>
+  <path fill="#A259FF" d="M8 14h4a3 3 0 1 1-4 3z"/>
+  <path fill="#1ABCFE" d="M12 8h4a3 3 0 1 1 0 6h-4z"/>
+  <path fill="#0ACF83" d="M12 2h4a3 3 0 1 1 0 6h-4z"/>
+</svg>            </div>
+            <div class="tool-name">Figma</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77A5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div class="tool-name">GitHub</div>
+          </div>
+
+            
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <ellipse cx="12" cy="5" rx="8" ry="3" fill="#00f0ff"/>
+  <path d="M4 5v7c0 1.66 3.58 3 8 3" stroke="#00f0ff" stroke-width="1.5"/>
+  <path d="M20 5v5" stroke="#00f0ff" stroke-width="1.5"/>
+  <path d="M4 9c0 1.66 3.58 3 8 3" stroke="#00f0ff" stroke-width="1.5"/>
+  <ellipse cx="16" cy="16" rx="5" ry="2" fill="#050810" stroke="#00f0ff" stroke-width="1.5"/>
+  <path d="M11 16v4c0 1.1 2.24 2 5 2s5-.9 5-2v-4" stroke="#00f0ff" stroke-width="1.5"/>
+</svg>
+            </div>
+            <div class="tool-name">SQL</div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="section-label reveal">Get In Touch</div>
+  <h2 class="contact-title reveal">Let's <span>Talk</span></h2>
+  <p class="contact-sub reveal">Have a project in mind? Let's build something extraordinary together. I'm currently available for freelance and full-time roles.</p>
+
+  <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input name="name" class="form-input" type="text" placeholder="John Doe" required/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input name="email" class="form-input" type="email" placeholder="john@example.com" required/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Subject</label>
+      <input name="subject" class="form-input"  type="text" placeholder="Project Inquiry" required/>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Message</label>
+      <textarea name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+    </div>
+    <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+  </form>
+
+  <div class="socials reveal">
+    <!-- GitHub -->
+    <a href="https://github.com/MildredDowuonaOwoo" class="social-link" aria-label="GitHub">
+      <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77A5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/mildred-dowuona-owoo-991a9228a/" class="social-link" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:mildredowoo520@gmail.com" class="social-link" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-text">Begin.Believe.Become &mdash; 2026</span>
+  <span class="footer-text">MILDRED DOWUONA OWOO &mdash; All rights reserved</span>
+</footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
