@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="50%" stop-color="#140a28"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#7b2fff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="240" height="240" fill="url(#bgGrad)"/>
+  <circle cx="120" cy="120" r="105" fill="none" stroke="url(#neonGlow)" stroke-width="2" opacity="0.4"/>
+  <circle cx="120" cy="85" r="42" fill="none" stroke="url(#neonGlow)" stroke-width="2.5" filter="url(#glow)"/>
+  <circle cx="120" cy="85" r="36" fill="#00f0ff" opacity="0.12"/>
+  <path d="M50 205 C50 152, 90 142, 120 142 C150 142, 190 152, 190 205" fill="none" stroke="url(#neonGlow)" stroke-width="2.5" filter="url(#glow)"/>
+  <text x="120" y="228" text-anchor="middle" fill="#00f0ff" font-family="'Space Mono', monospace" font-size="10" letter-spacing="2" opacity="0.7">INSERT mildred.png</text>
+</svg>
+
